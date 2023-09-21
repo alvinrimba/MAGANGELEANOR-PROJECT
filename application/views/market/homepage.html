@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Dashboard Template · Bootstrap v4.6</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/dashboard/">
+
+    
+
+    <title>Jibufy - Business Company</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="static/custom.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css.map">
+    
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Jibufy</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span data-feather="home"></span>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              Integrations
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Add New</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Bookmarks</button>
+          </div>
+          <!-- <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button> -->
+        </div>
+      </div>
+
+
+
+      <!-- <div class="container"> -->
+        
+        <div class="categories-bar mb-4">
+            <a href="#" class="category">All</a>
+            <a href="#" class="category">Music</a>
+            <a href="#" class="category">Gaming</a>
+            <a href="#" class="category">News</a>
+            <a href="#" class="category">Sports</a>
+            <a href="#" class="category">Movies</a>
+            <a href="#" class="category">Electronics</a>
+            <a href="#" class="category">Python</a>
+            <a href="#" class="category">Django</a>
+            <a href="#" class="category">Flutter</a>
+            <a href="#" class="category">Hospitals</a>
+            <a href="#" class="category">Engineering</a>
+            <a href="#" class="category">Politics</a>
+            <a href="#" class="category">Opinion</a>
+            <a href="#" class="category">Science</a>
+            <a href="#" class="category">Travel</a>
+        </div>
+
+        
+        <!-- <h2 class="my-4 h3">Products List</h2> -->
+        <!-- Sample card Thumbnails -->
+        <div d="gallery" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gallery">
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/01.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">43 Inches Hisense Smart TV Powered by Android VIDAA</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/02.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">ADH 32 Inch Flameless LED HD Digital TV With Free to Air</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/03.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">Hisense Smart 50 Inches 4k</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/04.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">43 Inches Brand New LG Smart Frameless With Inbuilt</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/05.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">TCL 65inch Real Uhd Smart TVS</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/06.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">MECOOL KM6 Android TV Box 10</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/07.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">Smart Plus 32 Inch Framless HD TV With Free to Air Decoder</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/08.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">Starsat SR- 220H Satellite Receiver</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/09.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">MECOOL KM6 Android TV Box 10</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/10.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">Smart Plus 32 Inch Framless HD TV With Free to Air Decoder</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/11.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">Starsat SR- 220H Satellite Receiver</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col gallery-item">
+                <div class="card-thumbnail position-relative">
+                    <a href="#" class="position-absolute card-icon"><i class="bi bi-bookmark"></i></a>
+                    <a href="detail.html"><img style="height: 200px;width: 100%;" src="static/img/12.jpg" alt="card Thumbnail" class="img-fluid"></a>
+                    <h5 class="mt-2 card-title text-primary">USh 800,000</h5>
+                    <div class="card-title">MECOOL KM6 Android TV Box 10</div>
+                    <div class="card-description">Kampala City • Electronics</div>
+                    <p class="card-description">20k Likes</p>
+                    <div class="thumbnail-button">
+                        <a href="detail.html">Detail</a>
+                        <a href="detail.html" class="bg-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example mt-3">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    <!-- </div> -->
+
+
+      
+    </main>
+  </div>
+</div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+        <script src="dashboard.js"></script>
+
+        <!-- Add Bootstrap JS scripts here (optional, if needed) -->
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js.map"></script>
+    <script type="text/javascript" src="static/js/htmx.min.js"></script>
+
+    <script src="static/masonry.js"></script>
+
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    var elem = document.querySelector('.gallery');
+    var msnry = new Masonry( elem, {
+      // options
+      itemSelector: '.gallery-item',
+      columnWidth: '.gallery-item',
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var msnry = new Masonry( '.gallery', {
+      // options
+    });
+  </script>
+  </body>
+</html>

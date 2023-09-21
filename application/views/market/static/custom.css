@@ -1,0 +1,327 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0!important;
+/*    background-color: #f7f7f7;*/
+    margin: 0;
+    padding: 0;
+
+}
+a { 
+    text-decoration: none !important;
+    color: #777;
+}
+
+.card-border-top{
+    border-top: 3px solid #1466C8!important;
+}
+
+.thumbnail-button a:hover { 
+    text-decoration: none !important;
+    color: white!important;
+}
+.navbar {
+    background-color: #1877f2;
+    border-bottom: 3px solid #1466C8;
+}
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+.navbar-brand img {
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.nav-item {
+    margin-right: 15px;
+}
+
+.search-bar {
+    text-align: center;
+}
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    font-size: 16px;
+}
+.search-bar button {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.card-thumbnail {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.card-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card-description {
+    font-size: 15px;
+    color: #777;
+    margin-top: 5px;
+}
+.like-count {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+.thumbnail-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.thumbnail-button a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.thumbnail-button a:last-child {
+    margin-right: 0;
+}
+.thumbnail-button a:hover {
+    background-color: #cc0000;
+}
+.form-control {
+    flex: 1;
+}
+.card-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  color: #FF3860;
+  padding: 2px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+} 
+.categories-bar {
+    background-color: #f0f0f0;
+    padding: 10px 0; /* Adjust padding */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex; /* Add flex display to make items horizontally aligned */
+    gap: 10px; /* Add gap between category items */
+    align-items: center; /* Vertically center align items */
+    flex-wrap: nowrap; /* Ensure items don't wrap to the next line */
+    -webkit-overflow-scrolling: touch;
+}
+
+.category {
+    font-size: .875rem; /* Adjust font size */
+    color: #333;
+    background-color: #fff;
+    padding: .75rem 1rem; /* Adjust padding */
+    border: none;
+    border-radius: 5px;
+    border-bottom: 3px solid #1466C8;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.category:last-child {
+    margin-right: 0;
+}
+
+.category:hover {
+    color: #ff0000;
+}
+       
+.comment-card {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.comment-card textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.comment-card .btn {
+  background-color: green;
+  color: #fff;
+}
+.comment-list {
+  margin-top: 20px;
+}
+.comment-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.comment-item .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-item .date {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.comment-item .content {
+  font-size: 16px;
+}
+
+.smooth-scroll {
+    cursor: pointer;
+}
+
+/* Default styles for all devices */
+.big-image {
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Tablet styles (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .big-image {
+        height: 380px; /* Adjust the height for tablets */
+    }
+}
+
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+    .big-image {
+        height: 300px; /* Adjust the height for mobile devices */
+    }
+}
+
+.small-image {
+    display: block;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.small-image.active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.d-flex.flex-row {
+    overflow-x: scroll;
+}
+
+.list-group {
+    margin-top: 20px;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    background-color: #007bff!important;
+    color: #fff;
+    border-bottom: none;
+}
+
+.card-footer{
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.footer-links li:last-child {
+  margin-right: 0;
+}
+.footer-links a {
+  color: #fff;
+}
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.profile-info {
+    margin-top: 20px;
+/*    padding: 0px 10px;*/
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.profile-info p, .profile-info ul li {
+    font-size: 16px;
+    color: #777;
+}
+
+.social-btn {
+    margin: 10px!important;
+}

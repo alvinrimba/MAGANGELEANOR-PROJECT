@@ -1,0 +1,39 @@
+Pages
+1 - Category 
+	name 
+
+2 - Page 
+	author
+	name
+	category
+	image
+	phone
+	email
+	website
+	town
+	country
+	description
+	followers_count
+	followers
+	is_available
+	created
+
+
+Stores
+1 - Category 
+	name 
+
+2 - Product 
+	author 
+	images 
+	price 
+	description 
+	likes 
+	bookmarks
+	is_available
+	created 
+
+
+
+
+
